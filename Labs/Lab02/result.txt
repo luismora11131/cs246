@@ -1,0 +1,20 @@
+Section		Grade
+=========================== 
+Part A		0.90/2.00
+Part B		1.90/3.00
+===========================
+Total		2.80/5.00 
+
+Comment:
++ Part A, the function is not performing
+the requested task.
+
++ Part A, the function will not produce
+an accurate solutions.
+
++ Part B, there are several errors.
+
++ Part B, a method is missing.
+
++ Part B, some methods are defined
+incorrectly.
