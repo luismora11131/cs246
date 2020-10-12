@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+#include <string>
+#include "Node.h"
+
+//Function Definition Here
+template <typename T>
+bool Similar(ds::mn::Node<T>* ar1,ds::mn::Node<T>* ar2){
+  bool loop=true;
+  while(loop){
+    ar1->next->data;
+    ar2->next->data;
+    if(ar1->data==ar2->data){
+      return true;
+    }
+    else{
+      loop=false;
+      return false;
+    }
+  }
+}
+int main()
+{
+	return 0;
+}
