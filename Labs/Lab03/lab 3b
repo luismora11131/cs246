@@ -1,0 +1,91 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+template <typename T>
+  class Set{
+    private:
+    T arr[100];
+    int size=sizeof(arr);
+    public:
+    //public default constrictor 
+    assign(){
+      for(int i=0;i<size;i++){
+        arr[i]=0;
+      }
+    }
+
+    //compy constructor
+    assign(const assign& obj){
+    }
+
+    //assignment operator
+    assign& operator=(const assign& rhs){
+
+    //destructor
+    ~assign(){}
+
+
+    //public void
+    void Add(const T number){
+      for(int i=0;i<size;i++){
+        if(number!=arr[i]){
+          arr[i]=number;
+        }
+      }
+    }
+
+
+    //public bool
+    bool const IsEmpty(){
+      if(arr==0){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
+
+
+    //public int
+    int const Count(){
+      int count=0;
+      for(int i=0;i<size;i++){
+        count++;
+      }
+      return count;
+    }
+
+
+    //public bool
+    bool const Contains(T anythinbg){
+      for(int i=0;i<size;i++){
+        if(anything==arr[i]){
+          return true;
+        }
+        else{
+          return false;
+        }
+      }
+    }
+
+
+    //public const
+    const ToString(){
+      cout<<'{';
+      for(int i=0;i<size;i++){
+        cout<<arr[i]<<','
+      }
+      cout<<'}';
+    }
+
+
+    //friend overloaded
+    friend ostream& operator<<(ostream out, const assign& obj){
+      cout<<'{';
+      for(int i=0;i<size;i++){
+        cout<<arr[i]<<','
+      }
+      cout<<'}';
+    }
+    }
+  };
