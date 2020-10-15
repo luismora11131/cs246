@@ -1,0 +1,22 @@
+  
+#include <iostream>
+#include <string>
+#include "Node.h"
+double Maximun(ds::sn::Node<double>* root){
+  while(root!=NULL){
+    if((root->next->data)<(root->data)){
+      return 0;
+    }
+  
+  }
+  return root->data;
+}
+int main()
+{
+	return 0;
+}
+
+
+
+
+//Im sorry for the late summit, I saw you havent posted the answers for it so I though I might have a chance of getting some points. I got home at around 5 and was in class at around 5:10 so i was super late... srr
