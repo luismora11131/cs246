@@ -1,0 +1,103 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+#include "Array.h"
+//number 1
+int MinimunDistance(ds::Array<int>& data){
+  int size=sizeof(data);
+  if(size==1||size==0){
+    return 0;
+  }
+  else{
+    int min=0, value;
+    for(int i=0;i<size;i++){
+      value=data[i+1]-data[i];
+      if(value>min){
+        min=value;
+      }
+    }
+  }
+}
+
+
+//number 2
+template <typename T>
+bool Different(ds::Array<T>& ar1, ds::Array<T>& ar2){
+int size1=sizeof(ar1);
+int size2=sizeof(ar2);
+int a=0,b=0;
+while(a<size1&&b<size2){
+  if(ar1[a]!=ar2[b]){
+    return false;
+  }
+  a++;
+  b++;
+}
+return true;
+}
+
+//number 3
+template <typename T>
+void EndAppend(ds::Array<T>& data,ds::Array<T>& addon){
+int x=sizeof(data)/sizeof(data[0]);
+int y=sizeof(addon)/sizeof(addon[0]);
+int arr[x+y];
+for(int i=0;i<x+y;i++){
+  if(i<x){
+    arr[i]=data[i];
+  }
+  else{
+    arr[i]=addon[i-x];
+  }
+}
+for(int i=0;i<x+y;i++){
+  cout<<arr[i]<<' ';
+}
+}
+
+
+//number 4
+/*
+cost|time| operation
+1   |1   | int 1;
+1   |1   | int lc=0;
+1   |1   | int rc=0;
+1   |1   | ln=r-p+1;
+1   |1   | rn=p-r;
+1   |1   | int L[ln], R[rn];
+1   |1   | int i=0;
+1   |n+1 | i<ln
+1   |n   | i+=1;
+1   |n   | L[i]=a[p+i];
+1   |1   | i=0;
+1   |n+1 | i<rn
+1   |n   | i+=1;
+1   |n   | R[i]=a[r+i+1];
+1   |1   | i=p;
+1   |n+1 | lc<ln&&rc<rn;
+1   |n   | i+=1;
+1   |n   | L[lc]<=R[rc]
+1   |n   | a[i]=[lc];
+1   |n   | lc+=1;
+1   |n   | a[i]=R[rc];
+1   |n   | rc+=1;
+1   |n   | lc<ln
+1   |n   | a[i]=L[lc];
+1   |n   | i+=1;
+1   |n   | lc+=1;
+1   |n   | rc<rn
+1   |n   | a[i]=R[rc];
+1   |n   | i+=1;
+1   |n   | rc+=1;
+
+*/
+
+int main() {
+int arr[]={1,4,6,5,9};
+char data[]={'a','b','c','d','e'};
+char addon[]={'f','g','h','i','j'};
+
+  std::cout << "Hello World!\n";
+}
