@@ -1,0 +1,14 @@
+Section		Grade
+=========================== 
+Part A		0.50/2.00
+Part B		0.00/3.00
+===========================
+Total		0.00/5.00 
+
+Comment:
++ Part A, solutions will be inaccurate.
+
++ Part A, there are errors.
+
++ Part A, function is not performing
+required task.

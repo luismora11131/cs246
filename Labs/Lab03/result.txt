@@ -1,11 +1,13 @@
 Section		Grade
 ========================== 
 Part A		0.00/2.00
-Part B		0.00/3.00
+Part B		1.05/3.00
 ==========================
-Total		0.00/5.00
+Total		1.05/5.00
 
 Comment:
 + Part A is missing.
 
-+ Part B is missing.
++ Part B, there are several errors.
+
++ Part B, some methods are missing.
