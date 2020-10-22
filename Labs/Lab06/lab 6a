@@ -1,0 +1,32 @@
+  
+#include <iostream>
+#include "Node.h"
+
+template<typename T>
+void BackwardRotation(ds::mn::Node<T>*& root){
+  T temp=root;
+ while(root!=NULL){
+   root=root->next;
+ }
+    root=temp;  
+
+
+
+
+
+
+
+ while(root->next!=NULL){
+ 
+  if(temp!=NULL){
+    temp=root;
+    root=root->next;
+    root->next=temp;
+  }
+   
+   }  
+ }
+int main()
+{
+	return 0;
+}
