@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+#include "Node.h"
+//Problem 1
+template <typename T>
+void FrontAppend(ds::mn::Node<T>*&data,ds::mn::Node<T>* addon){
+int y=sizeof(data)/sizeof(data[0]);
+int x=sizeof(addon)/sizeof(addon[0]);
+int arr[x+y];
+for(int i=0;i<x+y;i++){
+  if(i<x){
+    arr[i]=data[i];
+  }
+  else{
+    arr[i]=addon[i-x];
+  }
+}
+for(int i=0;i<x+y;i++){
+  std::cout<<arr[i]<<' ';
+}
+}
+
+//Problem 2
+bool LessThan(ds::sn::Node<bool>* op1,ds::sn::Node<bool>* op2){
+  while(op1!= NULL&&op2!=NULL){
+    if(op1->next!=op2->next){
+      if(op1->data<op2->data||op1->data>op2->data){
+        return true;
+      }
+    if((ap1->next==NULL&&op2->next!=NULL)||(op1->next!=NULL&&op2->next==NULL)){
+      return true;
+    }
+    op1=op1->next;
+    op2=op2->next;
+
+
+  
+
+ 
+  }
+  return false;
+}
+
+
+int main()
+{
+	return 0;
+}
