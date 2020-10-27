@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include "Node.h"
+using namespace std;
+
+//Define Function Here
+bool IsValidWord(string wrd){
+bool exit=true;
+if(wrd.find("aab")!=string::npos){
+  for(int i=0;i<wrd.length();i++){
+    putchar(tolower(wrd[i]));
+  }
+}
+else{
+  return false;
+  exit=false;
+}
+while(exit){
+int max=wrd.length();
+for(int i=0;i<max;i++){
+  if(wrd[i]!='a'||wrd[i]!='b'){
+    return false;
+    break;
+  }
+}
+}
+return true;
+}
+
+
+
+int main()
+{
+	return 0;
+}
